@@ -7,7 +7,7 @@ export ARCH=arm64
 export SUBARCH=arm64
 export DTC_EXT=dtc
 make O=out ARCH=arm64 lancelot_defconfig
-export PATH="${PWD}/root/mt6768-redmi-9-lancelot-kernel/proton-clang/:${PATH}"
+export PATH="${PWD}/home/mt6768-redmi-9-lancelot-kernel/proton-clang/:${PATH}"
 make -j$(nproc --all) O=out \
                       ARCH=arm64 \
                       LD=${PWD}/proton-clang/bin/ld.lld \
